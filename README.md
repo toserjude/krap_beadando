@@ -13,17 +13,18 @@ adatok törlése
 
 REST API endpointok:
 
-GET: http://localhost:8080/web_war/rest/autok
 
-GET: http://localhost:8080/web_war/rest/autok?uzemanyag={uzemanyag}
+összes autó lekérdezése, GET: http://localhost:8080/web_war/rest/autok
 
-GET: http://localhost:8080/web_war/rest/auto/{rendszam}
+összes autó lekérdezése adott üzemanyag fajta alapján, GET: http://localhost:8080/web_war/rest/autok?uzemanyag={uzemanyag}
 
-DELETE: http://localhost:8080/web_war/rest/auto/{rendszam}
+adott rendszámú autó lekérdezése, GET: http://localhost:8080/web_war/rest/auto/{rendszam}
 
-POST: http://localhost:8080/web_war/rest/autok (context-type: application/json)
+adott rendszámú autó törlése, DELETE: http://localhost:8080/web_war/rest/auto/{rendszam}
 
-POST: http://localhost:8080/web_war/rest/autok/update (context-type: application/json)
+új autó felvitele, POST: http://localhost:8080/web_war/rest/autok (context-type: application/json)
+
+meglévő autó módosítása, POST: http://localhost:8080/web_war/rest/autok/update (context-type: application/json)
 
 Példa adatok:
 
